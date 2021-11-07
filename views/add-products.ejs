@@ -1,0 +1,14 @@
+<%- include("includes/head.ejs") %>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <main>
+      <h1>My Products</h1>
+      <p>List of all the Products</p>
+      <form class="product-form" action="/admin/add-product" method="POST">
+          <div class="form-control"></div>
+            <input type="text" name="title" />
+            <button type="submit">Add Product</button>
+      </form>
+    </main>
+  </body>
+</html>
